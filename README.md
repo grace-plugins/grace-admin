@@ -50,11 +50,8 @@ cd grace-admin
 * Support Grace 2022.1.0+
 
 
-## Known issues
-
-
 ## Links
 
 - [Grace Framework](https://github.com/graceframework/grace-framework)
 - [Grace Plugins](https://github.com/grace-plugins)
-- [Grace Dynamic Menus Guide](https://github.com/grace-guides/gs-dynamic-menus)
+- [Grace Admin Console Guide](https://github.com/grace-guides/gs-admin-console)
