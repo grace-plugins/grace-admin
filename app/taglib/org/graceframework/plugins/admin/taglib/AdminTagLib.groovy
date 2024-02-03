@@ -98,8 +98,8 @@ class AdminTagLib {
                         css = attrs.currentcss
                     }
                     value = StringUtils.replace(value, "[class]", css)
-                    value = StringUtils.replace(value, "[name]", g.message(code: section?.i18nNameKey, default: section?.name))
-                    value = StringUtils.replace(value, "[description]", g.message(code: section?.descriptionKey, default: section?.description))
+                    value = StringUtils.replace(value, "[name]", g.message(code: section.i18nNameKey, default: section.name) ?: section.name)
+                    value = StringUtils.replace(value, "[description]", g.message(code: section.descriptionKey, default: section.description) ?: section.description)
                 }
                 if (!justlinks) buf.append("<li class=\"nav-item\">")
                 if (justlinks && i > 0) buf.append(" | ")
@@ -130,7 +130,7 @@ class AdminTagLib {
             StringBuilder buf = new StringBuilder()
             sections.eachWithIndex { section, i -> 
                 buf.append("<h6 class=\"text-black-50 text-uppercase\">")
-                buf.append(g.message(code: section?.i18nNameKey, default: section?.name))
+                buf.append(g.message(code: section.i18nNameKey, default: section.name) ?: section.name)
                 buf.append("</h6>")
 
                 def items = webInterfaceManager.getDisplayableItems(selectedMenuSection + '/' + section.key, [:])
@@ -140,9 +140,9 @@ class AdminTagLib {
                         String value = body()
                         if (value) {
                             value = StringUtils.replace(value, "[id]", item.key)
-                            value = StringUtils.replace(value, "[name]", g.message(code: item?.webLabel?.key, default: item?.name))
-                            value = StringUtils.replace(value, "[description]", item?.description ?: '')
-                            value = StringUtils.replace(value, "[url]", getLinkForItemUrl(item?.link?.url))
+                            value = StringUtils.replace(value, "[name]", g.message(code: item.webLabel?.key, default: item.name) ?: item.name)
+                            value = StringUtils.replace(value, "[description]", item.description ?: item.name)
+                            value = StringUtils.replace(value, "[url]", getLinkForItemUrl(item.link?.url))
 
                             def css = attrs.css
                             if (item.key == currentItem) {
