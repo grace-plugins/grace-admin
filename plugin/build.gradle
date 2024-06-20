@@ -100,6 +100,9 @@ publishing {
 
             from components.java
 
+            artifact source: "${project.sourceSets.main.groovy.outputDir}/META-INF/grails-plugin.xml",
+                classifier: "plugin",
+                extension: 'xml'
             pom {
                 name = "Grace Admin Plugin"
                 description = "A powerful and flexible, extensible administration framework and management console for Grace."
