@@ -11,6 +11,7 @@ buildscript {
         classpath "org.graceframework:grace-gradle-plugin:$graceVersion"
         classpath "com.github.erdi:webdriver-binaries-gradle-plugin:3.2"
         classpath "org.graceframework.plugins:asset-pipeline-gradle:5.2.7"
+        classpath "org.graceframework.plugins:database-migration:5.2.7"
     }
 }
 
@@ -69,6 +70,7 @@ dependencies {
     implementation "org.graceframework.plugins:cache"
     implementation "org.graceframework.plugins:async"
     implementation "org.graceframework.plugins:scaffolding"
+    implementation "org.graceframework.plugins:database-migration"
     implementation "org.graceframework.plugins:fields"
     implementation "org.graceframework.plugins:events"
     implementation "org.graceframework.plugins:hibernate5"
