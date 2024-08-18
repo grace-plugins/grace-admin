@@ -22,8 +22,8 @@ import grails.plugins.descriptors.WebSectionModuleDescriptor
 class AdminConsoleGrailsPlugin extends DynamicPlugin {
 
     // the version or versions of Grails the plugin is designed for
-    def version = '0.3.0-SNAPSHOT'
-    def grailsVersion = "2022.1.0 > *"
+    def version = '1.0.0-SNAPSHOT'
+    def grailsVersion = "2023.0.0 > *"
     // def dependsOn = [dynamicModules: '*']
     def loadAfter = ['dynamicModules', 'urlMappings']
 
