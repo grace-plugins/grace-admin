@@ -9,7 +9,7 @@ A powerful and flexible, extensible administration framework and management cons
 
 ## Grace Version
 
-- Grace **2022.1.0**
+- Grace **2023.0.0**
 
 ## Usage
 
@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.graceframework:grace-plugin-dynamic-modules"
+    implementation "org.graceframework.plugins:dynamic-modules:1.0.0-SNAPSHOT"
     implementation "org.graceframework.plugins:admin:$adminVersion"
 }
 
@@ -50,19 +50,15 @@ cd grace-admin
 
 ## What's New
 
-### 0.1.0
+### 1.0.0-SNAPSHOT
 
-* Refactor app and plugin directories
-* Upgrade to Grace 2022.2.4
-* Upgrade to Groovy 3.0.17
-
-### 0.0.1
-
-* Support Grace 2022.1.0+
+* Upgrade to Grace 2023.0.0
+* Upgrade to Groovy 4.0.22
 
 
 ## Links
 
 - [Grace Framework](https://github.com/graceframework/grace-framework)
 - [Grace Plugins](https://github.com/grace-plugins)
+- [Grace Dynamic Modules Plugin](https://github.com/grace-plugins/grace-dynamic-modules)
 - [Grace Admin Console Guide](https://github.com/grace-guides/gs-admin-console)
