@@ -67,7 +67,7 @@ A powerful and flexible, extensible administration framework and management cons
         }
     }
 
-    void doWithDynamicModules() {
+    Closure doWithDynamicModules() { {->
         // TODO Implement registering dynamic modules to application (optional)
         webSection(key: "admin.navigation.bar", name: "Admin Navigation Bar", i18nNameKey: "admin.menu.section.navigation.bar")
 
@@ -117,6 +117,6 @@ A powerful and flexible, extensible administration framework and management cons
                     label(key: "admin.menu.system.actuator.loggers")
                     link(linkId: "actuator_loggers", url: [namespace: 'admin', controller: 'actuator', action: 'loggers'])
                 }
-    }
+    }}
 
 }
