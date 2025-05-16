@@ -68,7 +68,7 @@ dependencies {
     implementation "org.graceframework:grace-plugin-url-mappings"
     implementation "org.graceframework.plugins:cache"
     implementation "org.graceframework.plugins:async"
-    implementation "org.graceframework.plugins:dynamic-modules:1.0.0-M1"
+    implementation "org.graceframework.plugins:dynamic-modules:$dynamicModulesVersion"
     implementation "org.graceframework.plugins:scaffolding"
     implementation "org.graceframework.plugins:events"
     implementation "org.graceframework.plugins:fields"
