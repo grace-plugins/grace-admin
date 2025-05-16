@@ -17,9 +17,14 @@ package org.graceframework.plugins.admin
 
 import grails.plugins.DynamicPlugin
 
+/**
+ * Admin Console for {@link DynamicPlugin}.
+ *
+ * @author Michael Yan
+ * @since 1.0
+ */
 class AdminConsoleGrailsPlugin extends DynamicPlugin {
 
-    // the version or versions of Grails the plugin is designed for
     def version = '1.0.0-SNAPSHOT'
     def grailsVersion = "2023.0.0 > *"
     // def dependsOn = [dynamicModules: '*']
@@ -45,27 +50,13 @@ A powerful and flexible, extensible administration framework and management cons
 
     // License: one of 'APACHE', 'GPL2', 'GPL3'
     def license = "APACHE"
-
-    // Details of company behind the plugin (if there is one)
     def organization = [ name: "Grace Framework", url: "https://github.com/graceframework/" ]
-
-    // Any additional developers beyond the author specified above.
     def developers = [ [ name: "Michael Yan", email: "rain@rainboyan.com" ]]
-
-    // Location of the plugin's issue tracker.
     def issueManagement = [ system: "GitHub", url: "https://github.com/grace-plugins/grace-admin/issues" ]
-
-    // Online location of the plugin's browseable source code.
     def scm = [ url: "https://github.com/grace-plugins/grace-admin.git" ]
 
-    Closure doWithSpring() { {->
-            // Use AdminConsolePluginConfiguration instead
-            // webInterfaceManager(DefaultWebInterfaceManager)
-        }
-    }
-
     Closure doWithDynamicModules() { {->
-        // TODO Implement registering dynamic modules to application (optional)
+        // Admin Console Navigation Bar, Tabs, Sidebar
         webSection(key: "admin.navigation.bar", name: "Admin Navigation Bar", i18nNameKey: "admin.menu.section.navigation.bar")
 
         webSection(key: "admin.tabs.dashboard", name:"Dashboard Tab", location:"admin.navigation.bar", i18nNameKey: "admin.menu.section.dashboard.name", descriptionKey: "admin.menu.section.dashboard.desc", weight: 1)
