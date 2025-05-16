@@ -1,5 +1,5 @@
 /*
- * Copyright 2022-2024 the original author or authors.
+ * Copyright 2022-2025 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,6 @@
 package org.graceframework.plugins.admin
 
 import grails.plugins.DynamicPlugin
-import grails.plugins.descriptors.WebItemModuleDescriptor
-import grails.plugins.descriptors.WebSectionModuleDescriptor
 
 class AdminConsoleGrailsPlugin extends DynamicPlugin {
 
@@ -31,7 +29,6 @@ class AdminConsoleGrailsPlugin extends DynamicPlugin {
     def pluginExcludes = [
         "grails-app/views/error.gsp"
     ]
-    def providedModules = [WebSectionModuleDescriptor, WebItemModuleDescriptor]
 
     def title = "Grace Admin Console Plugin"
     def author = "Michael Yan"
