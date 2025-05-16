@@ -20,7 +20,7 @@ import grails.plugins.DynamicPlugin
 class AdminConsoleGrailsPlugin extends DynamicPlugin {
 
     // the version or versions of Grails the plugin is designed for
-    def version = '1.0.0-SNAPSHOT'
+    def version = '1.0.0-RC1'
     def grailsVersion = "2023.0.0 > *"
     // def dependsOn = [dynamicModules: '*']
     def loadAfter = ['dynamicModules', 'urlMappings']
