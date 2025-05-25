@@ -1,0 +1,24 @@
+== Getting Started
+
+Add `admin` plugin to your `build.gradle`,
+
+[source,groovy]
+----
+apply plugin: "org.graceframework.grace-gsp"
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+        mavenContent {
+            snapshotsOnly()
+        }
+    }
+}
+
+dependencies {
+    implementation "org.graceframework.plugins:dynamic-modules:1.0.0-RC1"
+    implementation "org.graceframework.plugins:admin:$adminVersion"
+}
+
+----
