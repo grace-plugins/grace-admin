@@ -16,10 +16,6 @@ A powerful and flexible, extensible administration framework and management cons
 
 - Grace **2023.0.0**
 
-## Ducumentation
-
-* [1.0.x](https://plugins.graceframework.org/grace-admin/1.0.x/)
-
 ## Usage
 
 ### Add `admin` plugin
@@ -57,14 +53,9 @@ cd grace-admin
 ./gradlew publishToMavenLocal
 ```
 
-## What's New
+## Ducumentation
 
-### 1.0.0-M1
-
-* Upgrade to Grace 2023.0.0
-* Upgrade to Grace Dynamic Modules 1.0.0-M1
-* Upgrade to Groovy 4.0.22
-
+* [1.0.x](https://plugins.graceframework.org/grace-admin/1.0.x/)
 
 ## Links
 
