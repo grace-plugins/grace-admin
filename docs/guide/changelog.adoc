@@ -1,0 +1,64 @@
+### 1.0.0-RC2
+
+* Update README
+* Update documentation
+* Update description of the workflow steps
+* Upgrade to Grace Dynamic Modules 1.0.0-RC2
+* Migrate to Portal OSSRH Staging API
+* Update README - Add document links - Add badge
+* Correct the groovy api url
+* Upgrade to Gradle 7.6.5
+* Fixed FOLDER: build/docs
+* Update github workflows - Generate and deploy the release version of docs
+* Update github workflows - Upgrade to setup-gradle@v4
+* Add docs folder and Gradle tasks
+* Setup Grace docs workflow
+* Upgrade to Gradle Nexus Publish Plugin 2.0.0
+* Add groovydoc info
+* Remove grails-plugin.xml in favor of the generated file
+
+### 1.0.0-RC1
+
+* Remove unnecessary providedModules, because DynamicModules has already defined
+* Upgrade to Grace Dynamic Modules Plugin 1.0.0-RC1
+* Update README
+
+### 1.0.0-M1
+
+* Release v1.0.0-M1
+* Upgrade to Grace Dynamic Modules Plugin 1.0.0-M1
+* Adds src/main
+* Build against `dynamic-modules` 1.0.0-SNAPSHOT
+* Update github workflows
+* Update README.md
+* Use `dynamic-modules` plugin
+* Upgrade to Grace 2023.0.0
+* Upgrade to Grace 2023.0.0-RC2
+
+### 0.2.0
+
+* Add artifact `grails-plugin.xml`
+* Set `archiveClassifier` with 'plugin'
+* Update dependencies of plugin
+* Upgrade to Grace Asset Pipeline Plugin 5.2.6
+* Upgrade to Groovy 3.0.21
+* Upgrade to Grace 2022.2.6
+* Update github workflows
+
+### 0.1.0
+
+* Update index
+* Update README
+* Update github workflows
+* Update app
+* Update build scripts
+* Upgrade to Grace 2022.2.4 and Groovy 3.0.17
+* Move to plugin dir
+
+### 0.0.1
+
+* Update README
+* Update i18n messages
+* Improve AdminTagLib
+* Add readme
+* Grace Admin Plugin
