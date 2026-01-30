@@ -1,3 +1,9 @@
+### 1.0.0
+
+* Update changelog and usage docs
+* Upgrade to Grace Dynamic Modules 1.0.0 
+* Upgrade to Gradle 7.6.6 
+
 ### 1.0.0-RC2
 
 * Update README
