@@ -37,7 +37,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.graceframework.plugins:dynamic-modules:1.0.0-SNAPSHOT"
+    implementation "org.graceframework.plugins:dynamic-modules:1.0.0"
     implementation "org.graceframework.plugins:admin:$adminVersion"
 }
 
